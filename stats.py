@@ -8,4 +8,5 @@ def word_count(book_text):
 def character_count(words):
     # This functions will reduce all characters to lowercase and return a dictionary with the character and the number of times it occurs
     lowercase = words.lower()
+    return lowercase
 

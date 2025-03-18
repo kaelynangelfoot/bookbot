@@ -1,10 +1,27 @@
+# parameters
+num_words = 0
+book_text = ()
+words = []
+character_count = {}
+
 # the follwing function will pull the text from a file and convert it to a string
 def get_book_text(filepath):
     with open(filepath) as f:
         return f.read()
+
 def main():
     # Call get_book_text with the path to your file
     book_text = get_book_text("books/frankenstein.txt")
-    print(book_text)
+    num_words = word_count(book_text)
+    print(num_words, "words found in the document")
+    return word_count
+
+
+from stats import word_count, lowercase
+
+print (lowercase)
+
 #main
-main()
+if __name__ == "__main__":
+    main()
+

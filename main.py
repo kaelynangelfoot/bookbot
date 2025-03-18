@@ -2,7 +2,6 @@
 num_words = 0
 book_text = ()
 words = []
-character_count = {}
 
 # the follwing function will pull the text from a file and convert it to a string
 def get_book_text(filepath):
@@ -17,9 +16,10 @@ def main():
     return word_count
 
 
-from stats import word_count, lowercase
+from stats import word_count
+from stats import character_count
 
-print (lowercase)
+print (character_count)
 
 #main
 if __name__ == "__main__":
